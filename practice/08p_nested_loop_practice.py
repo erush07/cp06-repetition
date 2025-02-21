@@ -31,3 +31,10 @@ clear_screen()
 # remember that with a dicitonary, you can get the keys and values by
 # using dictionary_variable.items()
 
+schedule = {
+    "Monday": ["Math", "Science"],
+    "Tuesday": ["English", "History", "Art"],
+    "Wednesday": ["Math", "Science", "PE"],
+    "Thursday": ["English", "Art"],
+    "Friday": ["Math", "History", "Science", "PE"]
+}
