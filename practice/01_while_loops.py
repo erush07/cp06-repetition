@@ -77,3 +77,13 @@ while x < 10:
 # when they are done entering student info, print "Finished, thank you."
 
 
+enter_names = input("Do you wnat to enter a student's name? (enter Y or N)").upper()
+
+while enter_names == "Y":
+    name = input("enter a student name: ")
+    gpa = float(input("Enter GPA: "))
+
+    print(f"Student {name} has a GPA of {gpa}.")
+    enter_names = input("\nDo you want to enter a student's name? (enter Y or N)").upper()
+
+print("thanks for entering things")

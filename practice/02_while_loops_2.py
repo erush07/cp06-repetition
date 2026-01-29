@@ -26,7 +26,20 @@ Here we can try to run a while loop for a specific number of times.
 # How could you do that?
 
 
+number_students = int(input("How many students do you want to enter"))
+counter = 1
 
+while counter <= number_students:
+    name = input("enter a student name or QUIT to exit: ")
+    if full_name == "QUIT":
+        break
+
+    gpa = float(input("Enter GPA: "))
+
+    print(f"Student {name} has a GPA of {gpa}.")
+    counter += 1
+
+print("thanks for entering things")
 
 
 
