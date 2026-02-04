@@ -28,5 +28,21 @@ clear_screen()
 # prints out "Invalid number, you only have X friends in the list" and doesn't
 # throw an error. You might find the len() function good at this.
 
+friend_name = input("Enter in a name of a friend. to stop enter STOP").upper()
 
+friend_list = []
 
+while True:
+    friend_name = input("Enter in a name of a friend. to stop enter STOP").upper()
+    if friend_name == "STOP":
+        break
+    friend_list.append(friend_name)
+
+while True:
+    num_entered = int(input("Enter in the number of a friend in the list to see their name. Enter 0 to exit. "))
+    if num_entered == 0:
+        break
+    elif num_entered > len(friend_list):
+        print(f"Invalid number, you only have {len(friend_list)} friends in the list")
+        continue
+    print(friend_list[num_entered-1])

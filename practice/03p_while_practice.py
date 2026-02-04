@@ -11,10 +11,20 @@ clear_screen()
 # After entering 0, the program should display the sum of all numbers entered.
 # Do this without using break
 
+# user_number = int(input("give me a number (integer): "))
+
+# while user_number != 0:
+#     user_number = int(input("give me a number (integer): "))
+# print("thanks for playing")
 
 # 2. PRACTICE: WHILE WITH BREAK 
 # Do the same as in Practice #1, but use break
 
+while True:
+    user_number = int(input("give me a number (integer): "))
+    if user_number == 0:
+        break
+print("thanks for playing")
 
 # 3. PRACTICE: WHILE WITH CONTINUE
 # Do the same as in Practice #1 or #2, but only add up a number if

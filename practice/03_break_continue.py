@@ -28,18 +28,18 @@ They will almost always be used in conjunction with an if statement.
 # However, add logic so that if the user enters "QUIT" when it
 # asks for a student name, it immediately gets out of the loop
 
-answer = input("Do you want to enter a student name? ").upper()
+# answer = input("Do you want to enter a student name? ").upper()
 
-while answer == "Y":
-    full_name = input("Enter the student name: ")
+# while answer == "Y":
+#     full_name = input("Enter the student name: ")
     
-    gpa = float(input(f"Enter {full_name}'s GPA: "))
+#     gpa = float(input(f"Enter {full_name}'s GPA: "))
     
-    print(f"{full_name} has a GPA of {gpa}")
+#     print(f"{full_name} has a GPA of {gpa}")
     
-    answer = input("Do you want to enter another student name? ").upper()
+#     answer = input("Do you want to enter another student name? ").upper()
 
-print("Thank you")
+# print("Thank you")
 
 
 # 2. SKIP AN ITERATION OF THE LOOP:
@@ -51,8 +51,14 @@ answer = input("Do you want to enter a student name? ").upper()
 
 while answer == "Y":
     full_name = input("Enter the student name: ")
-
-    gpa = float(input(f"Enter {full_name}'s GPA: "))
+    
+    while True:
+        gpa = float(input(f"Enter {full_name}'s GPA: "))
+        if gps < 0:
+            print("Invalid GPA entered. Try again.")
+            continue # start the loop over again
+        else:
+            break
         
     print(f"{full_name} has a GPA of {gpa}")
     
