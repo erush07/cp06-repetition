@@ -37,3 +37,5 @@ example_list = ["Harry", "Hermione", "Ronald", "Luna"]
 # the starting number in enumerate(start=1) to start counting at 1 instead of 0.
 
 
+for index, name in enumerate(example_list, start=1):
+    print(name)

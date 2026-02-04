@@ -13,7 +13,13 @@ clear_screen()
 # "Enter information for student <x>" with x being 1, 2, 3, etc.
 # then enter a name and gpa and print it out
 
+# num_stu = int(input("How many students do you want to enter? "))
 
+# for _ in range(1, num_stu + 1):
+#     print(f"Enter information for student {_}: ")
+#     stu_name = input("Enter student's name: ")
+#     stu_gpa = float(input("Enter studnet's GPA: "))
+#     print(f"{stu_name} has a GPA of {str(stu_gpa)}.")
 
 
 
@@ -31,4 +37,8 @@ If the user enters 5, your program should print:
 32
 '''
 
+n = int(input("Enter an integer: "))
+
+for _ in range(1,n + 1):
+    print(2**_)
 

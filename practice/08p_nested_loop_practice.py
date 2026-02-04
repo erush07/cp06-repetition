@@ -27,3 +27,9 @@ schedule = {
     "Thursday": ["English", "Art"],
     "Friday": ["Math", "History", "Science", "PE"]
 }
+
+for day, list_classes in schedule.items():
+    print(day)
+    for each_class in list_classes:
+        print(f"\t{each_class}")
+    print()

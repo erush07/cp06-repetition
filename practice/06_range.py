@@ -26,6 +26,9 @@ for x in range(10):
 # 1. LOOPING X TIMES
 # Use range(5) and a for loop to print out "This will repeat 5 times" 5 times
 
+for _ in range(5):
+    print("this will repeat 5 times")
+
 
 '''
 Notice we didn't use the looping variable in the previous example?
@@ -38,6 +41,10 @@ this is just an easy way to show you don't use that variable.
 # 2. LOOPING X TIMES, PRINTING THE LOOPING VARIABLE
 # Now run the loop 5 times, but print out the looping variable
 # print out "This is loop #: 0" and then 2, 3, etc. up to 4
+
+clear_screen()
+for x in range(5):
+    print(f"this is loop: {x}")
 
 
 
@@ -61,14 +68,23 @@ range(<starting point>, <stopping point>, <step value>)
 # 3. LOOP 5 TIMES, STARTING AT 1
 # Print "This is loop #: " from 1 to 5 using range()
 
+clear_screen()
+for x in range(1,6): # inclusive on the left, exclusive on the right, will print 1 through 5)
+    print(f"this is loop #: {x}")
 
 
 # 4. LOOP 5 TIMES, STARTING AT 1
 # Print "This is loop #: " from 0 to 10,
 # but in increments of 2, so 0, 2, 4, etc.
 
+clear_screen()
+for x in range(0,10,2): # inclusive on the left, exclusive on the right, will print 0,2,4,6,10
+    print(f"this is loop #: {x}")
 
 # 5. LOOP INTO THE NEGATIVES
 # Print "This is loop #: " from 10 to -10, in increments of -2,
 # so 10, 8, 6, etc.
 
+clear_screen()
+for x in range(10,-11,3):
+    print(x)
